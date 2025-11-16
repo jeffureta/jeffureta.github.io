@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway  # Netlify's bridge to GitHub
+  name: decap-bridge  # REQUIRED: Switch from 'git-gateway' to this
+  site_id: 08430b3b-2312-44de-8e9d-718e10ad04b6
   branch: main       # Change to 'master' if that's your default
 
 media_folder: "assets/img"     # REQUIRED: Local path for uploaded media (e.g., images)
