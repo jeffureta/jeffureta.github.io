@@ -1,27 +1,28 @@
 backend:
-  name: decap-bridge  # REQUIRED: Switch from 'git-gateway' to this
-  site_id: 08430b3b-2312-44de-8e9d-718e10ad04b6
-  branch: main       # Change to 'master' if that's your default
+  name: github  # REQUIRED: Standard GitHub backend (not 'decap-bridge' or 'git-gateway')
+  repo: jepoyureta/jepoyureta.github.io  # Your GitHub repo (from screenshot)
+  branch: main  # Matches your setup
+  site_id: edit-084b3b23-2314-4ebe-91e0d4b6  # From your DecapBridge URL (adjust if different, e.g., without 'sites/')
+  auth_type: pkce  # Matches your dashboard selection
+  base_url: https://decapbridge.com  # DecapBridge host for auth proxy
+  # Optional: For explicit OAuth
+  auth_endpoint: oauth/authorize
+  token_endpoint: null  # PKCE handles this
 
-media_folder: "assets/img"     # REQUIRED: Local path for uploaded media (e.g., images)
-public_folder: "/assets/img"   # URL path for media in the built site (starts with /)
-#media_library:                 # REQUIRED: Config for media uploads
-#  name: image-gallery          # Default handler; supports drag-and-drop
-#  config:
-#    multiple: false            # Allow single uploads (set true for galleries)
+media_folder: "assets/img"     # Local path for uploads
+public_folder: "/assets/img"   # URL path in site
 
-collections:                   # REQUIRED: Your content types (non-empty array)
+collections:
   - name: "blog"
-    label: "Blog Posts"        # UI label
-    folder: "_posts"           # Jekyll's posts directory
-    create: true               # Allow creating new posts
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Filename format: YYYY-MM-DD-title.md
-    fields:                    # Fields for each post's front matter + body
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }  # Main content
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Categories", name: "categories", widget: "list", default: ["blog"] }
-      # Add more, e.g., for featured image: - { label: "Featured Image", name: "image", widget: "image" }
-      - {label: "Featured Image", name: "image", widget: "image"}
+      - { label: "Featured Image", name: "image", widget: "image" }  # For testing uploads
