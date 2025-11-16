@@ -2,7 +2,6 @@ backend:
   name: github
   repo: jeffureta/jeffureta.github.io
   branch: main
-  auth_type: pkce
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
