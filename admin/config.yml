@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway  # Uses Netlify's Git Gateway as the bridge to GitHub
+  branch: main       # Or 'master' if that's your default branch
+
+media_folder: "assets/img"  # Folder for uploaded images (create if needed)
+public_folder: "/assets/img"
+
+collections:  # Define content types; start with blog posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"  # Jekyll's posts dir
+    create: true      # Allow new posts
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Jekyll-friendly filename
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", default: "{{now}}"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "list", default: ["blog"]}
+      # Add more fields as needed (e.g., tags, author)
