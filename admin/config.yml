@@ -1,16 +1,11 @@
 backend:
-  name: github  # REQUIRED: Standard GitHub backend (not 'decap-bridge' or 'git-gateway')
-  repo: jepoyureta/jepoyureta.github.io  # Your GitHub repo (from screenshot)
-  branch: main  # Matches your setup
-  site_id: edit-084b3b23-2314-4ebe-91e0d4b6  # From your DecapBridge URL (adjust if different, e.g., without 'sites/')
-  auth_type: pkce  # Matches your dashboard selection
-  base_url: https://decapbridge.com  # DecapBridge host for auth proxy
-  # Optional: For explicit OAuth
-  auth_endpoint: oauth/authorize
-  token_endpoint: null  # PKCE handles this
+  name: github
+  repo: jeffureta/jeffureta.github.io
+  branch: main
+  auth_type: pkce
 
-media_folder: "assets/img"     # Local path for uploads
-public_folder: "/assets/img"   # URL path in site
+media_folder: "assets/img"
+public_folder: "/assets/img"
 
 collections:
   - name: "blog"
@@ -25,4 +20,4 @@ collections:
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Categories", name: "categories", widget: "list", default: ["blog"] }
-      - { label: "Featured Image", name: "image", widget: "image" }  # For testing uploads
+      - { label: "Featured Image", name: "image", widget: "image" }
