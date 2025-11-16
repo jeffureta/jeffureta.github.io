@@ -4,10 +4,10 @@ backend:
 
 media_folder: "assets/img"     # REQUIRED: Local path for uploaded media (e.g., images)
 public_folder: "/assets/img"   # URL path for media in the built site (starts with /)
-media_library:                 # REQUIRED: Config for media uploads
-  name: image-gallery          # Default handler; supports drag-and-drop
-  config:
-    multiple: false            # Allow single uploads (set true for galleries)
+#media_library:                 # REQUIRED: Config for media uploads
+#  name: image-gallery          # Default handler; supports drag-and-drop
+#  config:
+#    multiple: false            # Allow single uploads (set true for galleries)
 
 collections:                   # REQUIRED: Your content types (non-empty array)
   - name: "blog"
@@ -23,3 +23,4 @@ collections:                   # REQUIRED: Your content types (non-empty array)
       - { label: "Body", name: "body", widget: "markdown" }  # Main content
       - { label: "Categories", name: "categories", widget: "list", default: ["blog"] }
       # Add more, e.g., for featured image: - { label: "Featured Image", name: "image", widget: "image" }
+      - {label: "Featured Image", name: "image", widget: "image"}
