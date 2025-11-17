@@ -1,0 +1,16 @@
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .back-to-top.visible {
+    display: block;
+  }
+  

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post" id="top">
   <h1>{{ page.title }}</h1>
 
   <p><a href="{{ site.baseurl }}/">← Back to Home</a></p>
@@ -41,5 +41,17 @@ layout: default
   <div class="post-nav">
     {% include post-nav.html %}
   </div>
+
+  <a href="#top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<script>
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      document.querySelector(".back-to-top").classList.add("visible");
+    } else {
+      document.querySelector(".back-to-top").classList.remove("visible");
+    }
+  });
+</script>
 
 </article>
