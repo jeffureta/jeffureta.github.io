@@ -4,13 +4,16 @@
     right: 2rem;
     background-color: #000;
     color: #fff;
-    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     display: none;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s ease-in-out;
   }
   
   .back-to-top.visible {
-    display: block;
+    display: flex;
   }
   
