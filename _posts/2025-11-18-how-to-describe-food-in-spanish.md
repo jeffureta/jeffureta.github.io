@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Describe Food in Spanish"
-date: 2025-11-18 12:00:00 -0000
+date: 2025-11-18
 categories: spanish
 ---
 
