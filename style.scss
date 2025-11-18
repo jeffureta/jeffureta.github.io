@@ -629,3 +629,8 @@ footer {
 @import "video";
 @import "mermaid";
 @import "back-to-top";
+
+.back-to-top {
+  display: none !important;
+}
+
