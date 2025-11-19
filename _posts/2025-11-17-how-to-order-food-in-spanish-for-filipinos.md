@@ -17,7 +17,7 @@ To make your dining experience smooth and enjoyable, here’s what you should fa
     *   **Sopas y Ensaladas:** Soups and Salads
     *   **Plato Principal:** Main Course
     *   **Carne:** Meat
-    *   **Marisco:** Fish and Seafood
+    *   **Pescado y Marisco:** Fish and Seafood
     *   **Postre:** Dessert
     *   **Bebidas:** Drinks (including *vino* for wine, *cerveza* for beer, and *café* for coffee).
 
@@ -37,7 +37,7 @@ Your dining experience begins the moment you step inside. A polite greeting and 
 Once seated, the server will likely approach to take your drink order.
 
 *   **Server's Query:** The server will often ask "**¿Para beber?**" (What do you want to drink?).
-*   **Ordering Drinks:** You can order a beer by saying "**Una cerveza, por favor**." For a specific drink like Coca-Cola Zero, simply say "**Coca-Cola Zero, por favor**."
+*   **Ordering Drinks:** You can order a beer by saying "**Una cerveza, por favor**." For a specific drink like Coca-Cola Zero, simply say "**Coca-Cola Zero (KOH-kah KOH-lah SEH-roh), por favor**."
 *   **Requesting the Menu:** To ask for the menu, say "**La carta, por favor**" (the menu, please).
 
 ### Step 3: Ordering Your Food
