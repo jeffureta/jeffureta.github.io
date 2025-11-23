@@ -151,7 +151,11 @@
   <script>
     $(document).ready(function () {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+        var scrollHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var scrollThreshold = (scrollHeight - windowHeight) / 2;
+
+        if ($(this).scrollTop() > scrollThreshold) {
           $('#scroll').fadeIn();
         } else {
           $('#scroll').fadeOut();
