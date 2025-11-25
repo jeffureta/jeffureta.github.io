@@ -1,4 +1,6 @@
---- --- @import "variables";
+---
+---
+@import "variables";
 
 html {
   font-size: 100%;
@@ -366,6 +368,7 @@ pre {
 .gist .gist-file {
   isolation: isolate;
   font-family: $code-font-family !important;
+
 }
 
 .gist .markdown-body {
