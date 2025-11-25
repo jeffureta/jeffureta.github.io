@@ -1,7 +1,4 @@
----
----
-
-@import "variables";
+--- --- @import "variables";
 
 html {
   font-size: 100%;
@@ -30,9 +27,19 @@ body {
   overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: 15px;
 }
@@ -45,7 +52,12 @@ ul, ol, dl, figure,
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 01em 0 15px;
   color: $darkerGray;
   font-family: $sans-font-family;
@@ -55,22 +67,36 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+
   a {
     color: inherit;
   }
 }
 
-h2 {font-size: 28px;}
+h2 {
+  font-size: 28px;
+}
 
-h3 {font-size: 24px;}
+h3 {
+  font-size: 24px;
+}
 
-h4 {font-size: 20px;}
+h4 {
+  font-size: 20px;
+}
 
-h5 {font-size: 16px;}
+h5 {
+  font-size: 16px;
+}
 
-h6 {font-size: 14px;}
+h6 {
+  font-size: 14px;
+}
 
-small, .text_small {font-size: 14px;}
+small,
+.text_small {
+  font-size: 14px;
+}
 
 a {
   color: $blue;
@@ -86,7 +112,8 @@ a {
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -99,39 +126,45 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-figure > img {
+figure>img {
   display: block;
 }
 
 figcaption {
-    font-size: 14px !important;
-    margin-top: -20px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: $gray;
+  font-size: 14px !important;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $gray;
 }
 
 .gmnoprint img {
@@ -189,7 +222,7 @@ hr {
   font-weight: bold;
   color: $gray;
   margin-bottom: 30px;
-  }
+}
 
 .no-comments {
   font-weight: bold;
@@ -198,7 +231,7 @@ hr {
 }
 
 .related-posts {
-  .related-posts-heading{
+  .related-posts-heading {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -216,24 +249,30 @@ hr {
   margin-bottom: 35px;
   clear: both;
 
-    p {
-      .post-nav-label {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        color: $gray;
-      }
-
-      &:first-child {
-        padding-right: auto;
-        float: left;
-      }
-
-      &:last-child {
-        padding-left: auto;
-        float: right;
-      }
+  p {
+    .post-nav-label {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      color: $gray;
     }
+
+    &:first-child {
+      float: left;
+    }
+
+    &:last-child {
+      float: right;
+      text-align: right;
+    }
+
+    @include mobile {
+      width: 100%;
+      float: none !important;
+      display: block;
+      text-align: left !important;
+    }
+  }
 }
 
 .category-head {
@@ -245,6 +284,7 @@ hr {
   color: $white;
   background: $blue;
 }
+
 ::selection {
   color: $white;
   background: $blue;
@@ -262,7 +302,8 @@ blockquote {
     margin-bottom: 0;
   }
 
-  i, em {
+  i,
+  em {
     font-style: normal;
   }
 }
@@ -285,7 +326,7 @@ pre {
   padding: 08px 12px;
   overflow-x: auto;
 
-  > code {
+  >code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
@@ -326,16 +367,20 @@ pre {
   isolation: isolate;
   font-family: $code-font-family !important;
 }
+
 .gist .markdown-body {
   padding: 15px;
 }
+
 .gist pre {
   padding: 0;
   background-color: transparent;
 }
+
 .gist .gist-file .gist-data {
   font-size: 15px !important;
 }
+
 .gist code {
   isolation: isolate;
   padding: 0;
@@ -351,7 +396,7 @@ table {
   overflow-x: auto;
   border: 01px solid #dddddd;
 
-  & + table {
+  &+table {
     margin-top: 30px;
   }
 
@@ -361,7 +406,8 @@ table {
     }
   }
 
-  th, td {
+  th,
+  td {
     padding: 10px 15px;
   }
 
@@ -385,7 +431,7 @@ table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
 
@@ -470,6 +516,7 @@ a[href^="#fnref:"] {
       color: $mahogany !important;
       text-decoration: none;
     }
+
     &:visited {
       color: inherit;
     }
@@ -505,17 +552,19 @@ nav {
     font-weight: 400;
     letter-spacing: 01px;
 
-      &:hover {
-        color: inherit;
-        text-decoration: underline;
-      }
-      &:visited {
-        color: inherit;
-      }
-        @include mobile {
-          margin: 0 10px;
-          color: $blue;
-        }
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: inherit;
+    }
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
   }
 }
 
@@ -529,22 +578,22 @@ a.nav-menu-item:focus {
 .clearfix:after {
   content: " ";
   display: table;
-  }
+}
 
 .clearfix:after {
   clear: both;
-  }
+}
 
 //
 // .main
 //
 
-.posts > .post {
+.posts>.post {
   padding-bottom: 02em;
   border-bottom: 01px solid $lightGray;
 }
 
-.posts > .post:last-child {
+.posts>.post:last-child {
   padding-bottom: 01em;
   border-bottom: none;
 }
@@ -565,14 +614,14 @@ a.nav-menu-item:focus {
       text-decoration: none;
     }
 
-      &:visited {
-        color: $mahogany;
-      }
+    &:visited {
+      color: $mahogany;
+    }
 
-        &:hover {
-          color: $mahogany;
-          text-decoration: underline;
-        }
+    &:hover {
+      color: $mahogany;
+      text-decoration: underline;
+    }
   }
 
   .reading-time {
@@ -602,9 +651,9 @@ footer {
     padding: 0 04px;
     color: $gray;
 
-      &:hover {
+    &:hover {
       color: $darkGray;
-      }
+    }
   }
 }
 
@@ -633,4 +682,3 @@ footer {
 .back-to-top {
   display: none !important;
 }
-
