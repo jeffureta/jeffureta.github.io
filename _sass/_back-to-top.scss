@@ -33,7 +33,7 @@
 }
 
 @media screen and (min-width: 641px) {
-    #scroll {
+    body.layout-default #scroll {
         display: none !important;
     }
 }
