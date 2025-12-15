@@ -163,7 +163,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       if (typeof M !== 'undefined' && elems.length) {
-        M.Sidenav.init(elems);
+        M.Sidenav.init(elems, { edge: 'right' });
       }
     });
   </script>
