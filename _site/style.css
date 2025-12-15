@@ -25,9 +25,19 @@ body {
   overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 .highlight {
   margin-bottom: 15px;
 }
@@ -40,7 +50,12 @@ ul, ol, dl, figure,
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1em 0 15px;
   color: #222222;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Roboto, "Droid Sans", Arimo, "Helvetica Neue", Helvetica, "Liberation Sans", Arial, Ubuntu, "DejaVu Sans", "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
@@ -75,7 +90,8 @@ h6 {
   font-size: 14px;
 }
 
-small, .text_small {
+small,
+.text_small {
   font-size: 14px;
 }
 
@@ -91,7 +107,8 @@ a:hover {
   text-decoration: underline;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -104,19 +121,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -223,12 +246,19 @@ hr {
   color: #666666;
 }
 .post-nav p:first-child {
-  padding-right: auto;
   float: left;
 }
 .post-nav p:last-child {
-  padding-left: auto;
   float: right;
+  text-align: right;
+}
+@media screen and (max-width: 640px) {
+  .post-nav p {
+    width: 100%;
+    float: none !important;
+    display: block;
+    text-align: left !important;
+  }
 }
 
 .category-head {
@@ -257,7 +287,8 @@ blockquote {
 blockquote > :last-child {
   margin-bottom: 0;
 }
-blockquote i, blockquote em {
+blockquote i,
+blockquote em {
   font-style: normal;
 }
 
@@ -350,7 +381,8 @@ table + table {
 table tr:nth-child(even) {
   background-color: #efefef;
 }
-table th, table td {
+table th,
+table td {
   padding: 10px 15px;
 }
 table th {
@@ -1332,6 +1364,15 @@ green     #859900  operators, other keywords
   opacity: 1;
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
+}
+
+@media screen and (min-width: 641px) {
+  #scroll {
+    display: none !important;
+  }
+}
+.back-to-top {
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://jeffureta.netlify.app/content/demo/2021/07/15/hello-world/</loc>
-<lastmod>2021-07-15T00:00:00+00:00</lastmod>
+<loc>https://jeffureta.netlify.app/travel/food/spanish/philippines/2025/11/17/how-to-order-food-in-spanish-for-filipinos/</loc>
+<lastmod>2025-11-17T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jeffureta.netlify.app/spanish/2025/11/18/how-to-describe-food-in-spanish/</loc>
+<lastmod>2025-11-18T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jeffureta.netlify.app/travel/food/spanish/2025/11/18/how-to-order-coffee-in-spanish/</loc>
+<lastmod>2025-11-18T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jeffureta.netlify.app/youtube/automation/content-creation/ai/2025/11/25/from-youtube-to-blog-post/</loc>
+<lastmod>2025-11-25T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://jeffureta.netlify.app/about</loc>
