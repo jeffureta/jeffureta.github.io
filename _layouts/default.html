@@ -43,6 +43,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
     integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   {% include google-analytics.html %}
 
@@ -155,6 +156,16 @@
 
   <!-- Back to Top Button -->
   <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      if (typeof M !== 'undefined' && elems.length) {
+        M.Sidenav.init(elems);
+      }
+    });
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
