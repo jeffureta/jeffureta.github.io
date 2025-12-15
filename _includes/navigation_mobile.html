@@ -1,0 +1,3 @@
+{% for item in site.navigation_links %}
+  <li class="nav-menu-item{% if page.url == item.url %} active{% endif %}"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+{% endfor %}
