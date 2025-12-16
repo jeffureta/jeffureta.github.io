@@ -685,3 +685,64 @@ footer {
 .back-to-top {
   display: none !important;
 }
+
+/* Responsive: hide desktop nav on small screens, show the sidenav trigger */
+.sidenav-trigger {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none !important;
+  }
+
+  .sidenav-trigger {
+    display: inline-flex !important;
+    align-items: center;
+    font-size: 26px;
+    color: $darkGray;
+  }
+}
+
+/* Sidenav styling to match site typography */
+.sidenav {
+  width: 280px !important;
+  background: $white;
+  font-family: $sans-font-family;
+  font-size: 18px;
+  color: $darkGray;
+  z-index: 10000 !important;
+  padding-top: 20px;
+}
+
+.sidenav li {
+  list-style: none;
+}
+
+.sidenav li a {
+  display: block;
+  padding: 12px 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidenav li a:hover {
+  background: $lightGray;
+  color: $blue;
+}
+
+.sidenav li.active a {
+  font-weight: 700;
+  color: $blue;
+}
