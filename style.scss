@@ -689,12 +689,14 @@ footer {
 /* Responsive: hide desktop nav on small screens, show the sidenav trigger */
 /* Responsive: hide desktop nav on small screens, show the sidenav trigger */
 .wrapper-masthead .masthead .sidenav-trigger {
-  display: none;
+  display: inline-flex !important;
   cursor: pointer;
   background: transparent;
   border: 0;
   padding: 0;
   color: inherit;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper-masthead .masthead .nav-menu {
