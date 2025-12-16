@@ -1375,4 +1375,66 @@ green     #859900  operators, other keywords
   display: none !important;
 }
 
+/* Responsive: hide desktop nav on small screens, show the sidenav trigger */
+/* Responsive: hide desktop nav on small screens, show the sidenav trigger */
+.wrapper-masthead .masthead .sidenav-trigger {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.wrapper-masthead .masthead .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .wrapper-masthead .masthead .nav-menu {
+    display: none !important;
+  }
+  .wrapper-masthead .masthead .sidenav-trigger {
+    display: inline-flex !important;
+    align-items: center;
+    font-size: 26px;
+    color: #333333;
+  }
+}
+/* Sidenav styling to match site typography and override Materialize defaults */
+.wrapper-masthead .masthead .sidenav {
+  width: 280px !important;
+  background: #FFFFFF !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Roboto, "Droid Sans", Arimo, "Helvetica Neue", Helvetica, "Liberation Sans", Arial, Ubuntu, "DejaVu Sans", "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", sans-serif !important;
+  font-size: 18px !important;
+  color: #333333 !important;
+  z-index: 10000 !important;
+  padding-top: 20px !important;
+  left: auto !important;
+  right: 0 !important;
+}
+
+.wrapper-masthead .masthead .sidenav li {
+  list-style: none;
+}
+
+.wrapper-masthead .masthead .sidenav li a {
+  display: block !important;
+  padding: 12px 20px !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.wrapper-masthead .masthead .sidenav li a:hover {
+  background: #EEEEEE !important;
+  color: #4183C4 !important;
+}
+
+.wrapper-masthead .masthead .sidenav li.active a {
+  font-weight: 700 !important;
+  color: #4183C4 !important;
+}
+
 /*# sourceMappingURL=style.css.map */

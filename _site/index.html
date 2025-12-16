@@ -22,14 +22,14 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="The blog on whatever is on my mind." />
 <meta property="og:description" content="The blog on whatever is on my mind." />
-<link rel="canonical" href="https://jeffureta.netlify.app/" />
-<meta property="og:url" content="https://jeffureta.netlify.app/" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="My Creative Space" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="My Creative Space" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"The blog on whatever is on my mind.","headline":"My Creative Space","name":"My Creative Space","url":"https://jeffureta.netlify.app/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"The blog on whatever is on my mind.","headline":"My Creative Space","name":"My Creative Space","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -68,6 +68,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
     integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   
   <!-- Google tag (gtag.js) -->
@@ -88,7 +89,7 @@
   <div class="wrapper-masthead">
     <div class="container">
       <header class="masthead clearfix">
-        <a href="/" class="site-avatar"><img src="https://jeffureta.netlify.app/assets/image/avatar.png" width="70"
+        <a href="/" class="site-avatar"><img src="http://localhost:4000/assets/image/avatar.png" width="70"
             height="70" /></a>
 
         <div class="site-info">
@@ -96,14 +97,13 @@
           <p class="site-description">The blog on whatever is on my mind.</p>
         </div>
 
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger hide-on-med-and-up" aria-label="Open menu">
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Open menu">
           <i class="material-icons">menu</i>
         </a>
+        <ul id="mobile-nav" class="sidenav">
+</ul>
 
-        <nav class="nav-menu">
-          
-
-        </nav>
+        
       </header>
     </div>
   </div>
@@ -262,7 +262,18 @@ Ordering coffee is a perfect, low...
   <!-- Back to Top Button -->
   <a href="#" id="scroll" style="display: none;"><span></span></a>
 
+  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof M !== 'undefined') {
+        M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
+      }
+    });
+  </script>
 
   <script>
     $(document).ready(function () {
