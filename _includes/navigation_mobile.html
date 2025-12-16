@@ -1,3 +1,5 @@
-{% for item in site.navigation_links %}
-  <li class="nav-menu-item{% if page.url == item.url %} active{% endif %}"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
-{% endfor %}
+<ol>
+  <li class="nav-menu-item"><a href="{{ site.baseurl }}/">Home</a></li>
+  <li class="nav-menu-item"><a href="{{ site.baseurl }}/about/">About</a></li>
+  <li class="nav-menu-item"><a href="https://paypal.me/jeffureta/230" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></li>
+</ol>
