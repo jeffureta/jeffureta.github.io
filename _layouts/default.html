@@ -61,7 +61,7 @@
           <p class="site-description">{{ site.description }}</p>
         </div>
 
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Open menu">
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
           <i class="material-icons">menu</i>
         </a>
         <ul id="mobile-nav" class="sidenav">{% include navigation_mobile.html %}</ul>
@@ -190,7 +190,17 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       if (typeof M !== 'undefined') {
-        M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
+        M.Sidenav.init(document.querySelectorAll('.sidenav'), {
+          edge: 'right',
+          onOpenStart: function() {
+            var triggers = document.querySelectorAll('.sidenav-trigger[data-target="mobile-nav"]');
+            triggers.forEach(function(t) { t.setAttribute('aria-expanded', 'true'); });
+          },
+          onCloseEnd: function() {
+            var triggers = document.querySelectorAll('.sidenav-trigger[data-target="mobile-nav"]');
+            triggers.forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+          }
+        });
       }
     });
   </script>
