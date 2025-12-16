@@ -1,5 +1,9 @@
 <ol>
-  <li class="nav-menu-item"><a href="{{ site.baseurl }}/">Home</a></li>
-  <li class="nav-menu-item"><a href="{{ site.baseurl }}/about/">About</a></li>
-  <li class="nav-menu-item"><a href="https://paypal.me/jeffureta/230" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></li>
+{% for item in site.navigation_links %}
+  {%- if item.url contains '://' -%}
+    <li class="nav-menu-item"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></li>
+  {%- else -%}
+    <li class="nav-menu-item{% if page.url == item.url %} active{% endif %}"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+  {%- endif -%}
+{% endfor %}
 </ol>

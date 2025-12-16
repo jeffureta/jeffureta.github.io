@@ -32,15 +32,15 @@ google_analytics: G-Q14RCVWQZD
 baseurl: ""
 
 # Navigation menu
-#navigation_links:
-#  - title: Blog
-#    url: /
+navigation_links:
+  - title: Home
+    url: /
 
-#  - title: About
-#    url: /about
+  - title: About
+    url: /about/
 
-#  - title: Search
-#    url: /search
+  - title: Buy me a coffee
+    url: https://paypal.me/jeffureta/230
 
 # Footer icons
 #footer_links:
