@@ -699,6 +699,11 @@ footer {
   justify-content: center;
 }
 
+a.sidenav-trigger:hover,
+a.sidenav-trigger:focus {
+  text-decoration: none;
+}
+
 .wrapper-masthead .masthead .nav-menu {
   display: flex;
   align-items: center;
